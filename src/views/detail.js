@@ -16,9 +16,9 @@ function Detail() {
     const [message, setMessage] = useState('')
 
     useEffect(() => {
-        const aux = data.find((element) => element.id == id);
+        const aux = data.find((element) => element.id.toString() === id);
         setProduct(aux)
-    },[data])
+    },[data, id])
 
     const adding = () => {
         if(!user)

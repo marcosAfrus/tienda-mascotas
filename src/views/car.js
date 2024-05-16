@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useData } from '../hooks/useData';
 import { UserContext } from '../context/userContext';
 import { HeadTable } from '../components/headTable/headTable';
 import { ElementTable } from '../components/elementTable/elementTable';
@@ -47,7 +46,7 @@ function Car() {
         }
         setData(aux)
         setTotal(['', 'Total a pagar', '', cant, price, offer, total])
-    },[])
+    },[car, navigate])
 
     const products = data.map((ele) =>
         <ElementTable elements={ele.items}/>

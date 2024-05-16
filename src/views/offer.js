@@ -15,7 +15,7 @@ function Offer() {
         let aux = []
         for (let index = 0; index < data.length; index++) {
             const element = data[index];
-            if (element.offer != 0)
+            if (element.offer !== 0)
                 aux.push(element)
         }
         setDataFilter(aux)
