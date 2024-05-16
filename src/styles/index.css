@@ -1,0 +1,354 @@
+/*Estilos globales*/
+body {
+    background-color: var(--main-color) !important;
+    margin: 0px;
+}
+
+p {
+    margin-bottom: 0rem !important;
+}
+
+.row {
+    --bs-gutter-x: 0rem !important;
+}
+
+/*Estilos del header*/
+.header {
+    height: 5rem;
+    background-color: var(--second-color);
+}
+
+.header h1 {
+    margin: 0px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__user__block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__user__block p {
+    color: var(--third-color);
+    margin-left: .5rem;
+    font-weight: bold;
+}
+
+.header__options {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+/*Estilos del footer*/
+.footer{
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer p {
+    color: white
+}
+
+.options {
+    padding-left: 1rem;
+}
+
+.options p {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/*Estilos del login*/
+.login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h1, p{
+    color: var(--second-color);
+}
+
+.login h1{
+    margin-top: 2rem;
+}
+
+.login button{
+    margin-top: 1.5rem;
+}
+
+/*Estilos del componente input*/
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label{
+    color: var(--second-color);
+    font-size: 12px;
+    padding-top: 1rem;
+}
+
+.input input{
+    border-radius: 8px;
+}
+
+/*Estilos del button*/
+.button{
+    color: var(--second-color);
+    background-color: var(--third-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+}
+
+
+/*Estilos del modal*/
+.modal__title{
+    color: var(--error-color);
+}
+
+.modal__text{
+    color: var(--black-color)
+}
+
+.modal__button{
+    background-color: var(--third-color);
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/*Estilos del banner*/
+.banner{
+    height: 20rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner h1{
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: var(--third-color);
+    font-weight: bold;
+}
+
+/*Estilos del home*/
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home h2{
+    margin-top: 1.5rem;
+    color: var(--second-color)
+}
+
+.home__list{
+    width: 80%;
+    margin-top: 2rem !important;
+}
+
+/*Estilos del producto*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container__product{
+    height: 100%;
+    width: 100%;
+    background-color: var(--black-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container__product h5{
+    color: var(--second-color);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.container__product__img {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container__product__img img{
+    width: 80%;
+    height: 10rem;
+    object-fit: cover;
+
+}
+
+.container__product__buttons{
+    margin-top: 1rem;
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: end;
+}
+
+/*Estilos del detalle de producto*/
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.detail h1{
+    color: var(--third-color);
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.detail h3{
+    color: var(--third-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.detail__block{
+    min-height: 500px;
+    width: 100%;
+}
+
+.detail__block--left p{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.detail__block__description{
+    margin-top: 2rem;
+}
+
+.detail__block--right img{
+    height: 60%;
+    max-width: 75%;
+    object-fit: cover;
+    margin: 4rem;
+    border-radius: 8px;
+}
+
+/*Estilos del boton flotante*/
+.floating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: yellow;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.floating p{
+    color: var(--black-color);
+}
+
+.floating__number{
+    background-color: red;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    border-radius: 8px;
+    bottom: .5rem;
+    right: .8rem;
+}
+
+.floating__number p {
+    margin: 0px;
+    font-size: 12px;
+    color: var(--second-color);
+}
+
+/*Estilos del error page*/
+.error {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error h1{
+    color: var(--second-color);
+}
+
+/*Estilos del carrito de compras*/
+.car {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.car h1{
+    color: var(--second-color);
+    margin: 2rem;
+}
+
+.car__table{
+    border-collapse: collapse;
+    border-color: var(--third-color);
+    background-color: var(--second-color);
+    margin: 2rem;
+}
+
+
+.car__table th, .car__table td{
+    border: 1px solid var(--third-color);
+    text-align: center;
+    padding: .5rem;
+}
+
+.car__form__button{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+/*Definición de algunos colores base de la aplicación*/
+:root {
+    --main-color: #5CB85C;
+    --second-color: #FFFFFF;
+    --third-color: #7D3C98;
+    --error-color: red;
+    --black-color: black;
+}

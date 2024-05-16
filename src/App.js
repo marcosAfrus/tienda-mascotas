@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import React from 'react';
+import StoreRouter from './routes/storeRoutes';
+import { UserContext } from './context/userContext';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [user, setUser] = useState('');
+    const [car, setCar] = useState([])
+
+    const updateUser = (name) => {
+        setUser(name);
+    };
+
+    const addCar = (product) => {
+        let aux = car
+        aux.push(product)
+        setCar(aux)
+    }
+
+    const emptyCar = () => {
+        setCar([])
+    }
+
+
+    return (
+        <UserContext.Provider value={{user, updateUser, car, addCar, emptyCar}}>
+            <StoreRouter></StoreRouter>
+        </UserContext.Provider>
+    );
 }
 
 export default App;
